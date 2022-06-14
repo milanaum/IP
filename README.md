@@ -44,7 +44,8 @@ print(img3)
 img=Image.new('RGB',(200,400),(0,128,0))
 img.show()
 
-![image](https://user-images.githubusercontent.com/97940333/173563061-31622e2c-cf59-4e93-aaea-edff11c42a41.png)
+![image](https://user-images.githubusercontent.com/97940333/173563737-782bccff-798e-4781-a884-b7b3e2591934.png)
+
 
 
 
