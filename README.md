@@ -97,18 +97,18 @@ Width: 275<br>
 Height: 183<br>
 
 *********************************************************************************************************************************************************
-6. import cv2
-import matplotlib.pyplot as plt
-import numpy as np
-img=cv2.imread('rose1.jpg')
-plt.imshow(img)
-plt.show()
-img=cv2.cvtColor(img,cv2.COLOR_RGB2BGR)
-plt.imshow(img)
-plt.show()
-img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
-plt.imshow(img)
-plt.show()
+6. import cv2 <br>
+import matplotlib.pyplot as plt<br>
+import numpy as np<br>
+img=cv2.imread('rose1.jpg')<br>
+plt.imshow(img)<br>
+plt.show()<br>
+img=cv2.cvtColor(img,cv2.COLOR_RGB2BGR)<br>
+plt.imshow(img)<br>
+plt.show()<br>
+img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)<br>
+plt.imshow(img)<br>
+plt.show()<br>
 
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940333/173813787-e69b5b4e-9c91-49cb-86e7-b2626e4c25e3.png) <br>
