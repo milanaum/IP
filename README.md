@@ -21,8 +21,8 @@ plt.imshow(img)
 
 
 3.import cv2 
-from PIL import image
-img=image open('dog2.jfif')
+from PIL import Image
+img=Image.open('dog2.jfif')
 img=img.rotate(360)
 img.show()
 cv2.waitKey(0)
