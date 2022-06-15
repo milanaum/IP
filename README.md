@@ -7,6 +7,7 @@ cv2.imshow('image',img)<br>
 cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
 
+OUTPUT:
 ![image](https://user-images.githubusercontent.com/97940333/173563349-a090516a-01fc-41ea-9bbe-e408be4d60e8.png)<br>
 
 ********************************************************************************************************************************************
@@ -16,6 +17,7 @@ import matplotlib.pyplot as plt<br>
 img=mping.imread('dog2.jfif')<br>
 plt.imshow(img)<br>
 
+OUTPUT:
 <matplotlib.image.AxesImage at 0x20d2d800d30><br>
 ![image](https://user-images.githubusercontent.com/97940333/173562778-db9f04a6-c59c-4abb-9e7d-08c4f6bf7261.png)<br>
 
@@ -28,6 +30,7 @@ img.show()<br>
 cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
 
+OUTPUT:
 ![image](https://user-images.githubusercontent.com/97940333/173564580-8dfd6a80-7532-4dd4-a2ff-8f51227b6cd3.png)<br>
 
 ****************************************************************************************************************************************************
@@ -39,6 +42,7 @@ print(img1)<br>
 img3=ImageColor.getrgb("green")<br>
 print(img3)<br>
 
+OUTPUT:
 (255, 0, 0)<br>
 (255, 255, 0)<br>
 (0, 128, 0)<br>
@@ -47,6 +51,7 @@ print(img3)<br>
 img=Image.new('RGB',(200,400),(0,128,0))<br>
 img.show()<br>
 
+OUTPUT:
 ![image](https://user-images.githubusercontent.com/97940333/173563737-782bccff-798e-4781-a884-b7b3e2591934.png)<br>
 
 
@@ -63,6 +68,7 @@ plt.show()<br>
 img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)<br>
 plt.show()<br>
 
+OUTPUT:
 ![image](https://user-images.githubusercontent.com/97940333/173562236-8862725d-baff-4b6a-a2c9-3ec8277aad3f.png)<br>
 ****************************************************************************************************************************************************************
 
@@ -76,6 +82,7 @@ print("Width:",image.width)<br>
 print("Height:",image.height)<br>
 image.close()<br>
 
+OUTPUT:
 Filename: dog2.jfif<br>
 Format: JPEG<br>
 Mode: RGB<br>
