@@ -90,6 +90,13 @@ Size: (275, 183)<br>
 Width: 275<br>
 Height: 183<br>
 
+*********************************************************************************************************************************************************
+import cv2
+img=cv2.imread('rose1.jpg',0)
+cv2.imshow('image',img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+![image](https://user-images.githubusercontent.com/97940333/173807683-12431058-d8f8-4531-88d6-e307316dc24f.png)
 
 
 
