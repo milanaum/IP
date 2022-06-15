@@ -97,6 +97,23 @@ Width: 275<br>
 Height: 183<br>
 
 *********************************************************************************************************************************************************
+6. import cv2
+import matplotlib.pyplot as plt
+import numpy as np
+img=cv2.imread('rose1.jpg')
+plt.imshow(img)
+plt.show()
+img=cv2.cvtColor(img,cv2.COLOR_RGB2BGR)
+plt.imshow(img)
+plt.show()
+img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
+plt.imshow(img)
+plt.show()
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97940333/173813787-e69b5b4e-9c91-49cb-86e7-b2626e4c25e3.png) <br>
+![image](https://user-images.githubusercontent.com/97940333/173813889-330e4f2d-566e-44d1-aed3-e2bc81750542.png) <br>
+![image](https://user-images.githubusercontent.com/97940333/173813951-6acee729-d4c1-4a6f-a12c-e80c64cbb119.png) <br>
 
 
 
