@@ -1,7 +1,8 @@
 # IP
 pip install opencv-python <br>
 ************************************************************************************************
-1. import cv2<br>
+1.  Develop  a program to display grayscale image using raed and write operation. <br>
+import cv2<br>
 img=cv2.imread('rose2.jfif',0)<br>
 cv2.imshow('image',img)<br>
 cv2.waitKey(0)<br>
@@ -11,8 +12,8 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940333/173563349-a090516a-01fc-41ea-9bbe-e408be4d60e8.png)<br>
 
 ********************************************************************************************************************************************
-
-2. import matplotlib.image as mping<br>
+2. Develop a program to display the image using matplotlib.<br>
+import matplotlib.image as mping<br>
 import matplotlib.pyplot as plt<br>
 img=mping.imread('dog2.jfif')<br>
 plt.imshow(img)<br>
@@ -22,7 +23,9 @@ OUTPUT: <br>
 ![image](https://user-images.githubusercontent.com/97940333/173562778-db9f04a6-c59c-4abb-9e7d-08c4f6bf7261.png)<br>
 
 ************************************************************************************************************************************************
-3. import cv2 <br>
+3. Develop a program to perform linear transformation <br>
+ i) Rotation <br>
+import cv2 <br>
 from PIL import Image<br>
 img=Image.open('dog2.jfif')<br>
 img=img.rotate(360)<br>
@@ -34,7 +37,8 @@ OUTPUT: <br>
 ![image](https://user-images.githubusercontent.com/97940333/173564580-8dfd6a80-7532-4dd4-a2ff-8f51227b6cd3.png)<br>
 
 ****************************************************************************************************************************************************
-4. from PIL import ImageColor<br>
+4. Develop a program to convert color string to RGB color value. <br>
+from PIL import ImageColor<br>
 img2=ImageColor.getrgb("red")<br>
 print(img2)<br>
 img1=ImageColor.getrgb("yellow")<br>
@@ -47,7 +51,8 @@ OUTPUT: <br>
 (255, 255, 0)<br>
 (0, 128, 0)<br>
 ************************************************************************************************************************************************
-5. from PIL import Image<br>
+5.  Develop a program to create image using colors. <br>
+from PIL import Image<br>
 img=Image.new('RGB',(200,400),(0,128,0))<br>
 img.show()<br>
 
@@ -57,7 +62,8 @@ OUTPUT: <br>
 
 ****************************************************************************************************************************************************
 
-6. import cv2<br>
+6. Develop a program to display to initialize the image using various colors spaces. <br> 
+import cv2<br>
 import matplotlib.pyplot as plt<br>
 import numpy as np<br>
 img=cv2.imread('dog2.jfif')<br>
@@ -71,8 +77,8 @@ plt.show()<br>
 OUTPUT: <br>
 ![image](https://user-images.githubusercontent.com/97940333/173562236-8862725d-baff-4b6a-a2c9-3ec8277aad3f.png)<br>
 ****************************************************************************************************************************************************************
-
-7. from PIL import Image<br>
+7. Write a program to display a image attributes. <br>
+ from PIL import Image<br>
 image=Image.open('dog2.jfif')<br>
 print("Filename:",image.filename)<br>
 print("Format:",image.format)<br>
