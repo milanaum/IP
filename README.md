@@ -1,6 +1,6 @@
 # IP
 pip install opencv-python <br>
-
+************************************************************************************************
 1.import cv2<br>
 img=cv2.imread('rose2.jfif',0)<br>
 cv2.imshow('image',img)<br>
@@ -9,7 +9,7 @@ cv2.destroyAllWindows()<br>
 
 ![image](https://user-images.githubusercontent.com/97940333/173563349-a090516a-01fc-41ea-9bbe-e408be4d60e8.png)<br>
 
-
+********************************************************************************************************************************************
 
 2.import matplotlib.image as mping<br>
 import matplotlib.pyplot as plt<br>
@@ -19,7 +19,7 @@ plt.imshow(img)<br>
 <matplotlib.image.AxesImage at 0x20d2d800d30><br>
 ![image](https://user-images.githubusercontent.com/97940333/173562778-db9f04a6-c59c-4abb-9e7d-08c4f6bf7261.png)<br>
 
-
+************************************************************************************************************************************************
 3.import cv2 <br>
 from PIL import Image<br>
 img=Image.open('dog2.jfif')<br>
@@ -30,7 +30,7 @@ cv2.destroyAllWindows()<br>
 
 ![image](https://user-images.githubusercontent.com/97940333/173564580-8dfd6a80-7532-4dd4-a2ff-8f51227b6cd3.png)<br>
 
-
+****************************************************************************************************************************************************
 4.from PIL import ImageColor<br>
 img2=ImageColor.getrgb("red")<br>
 print(img2)<br>
@@ -42,7 +42,7 @@ print(img3)<br>
 (255, 0, 0)<br>
 (255, 255, 0)<br>
 (0, 128, 0)<br>
-
+************************************************************************************************************************************************
 5.from PIL import Image<br>
 img=Image.new('RGB',(200,400),(0,128,0))<br>
 img.show()<br>
@@ -50,7 +50,7 @@ img.show()<br>
 ![image](https://user-images.githubusercontent.com/97940333/173563737-782bccff-798e-4781-a884-b7b3e2591934.png)<br>
 
 
-
+****************************************************************************************************************************************************
 
 6.import cv2<br>
 import matplotlib.pyplot as plt<br>
@@ -64,7 +64,7 @@ img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)<br>
 plt.show()<br>
 
 ![image](https://user-images.githubusercontent.com/97940333/173562236-8862725d-baff-4b6a-a2c9-3ec8277aad3f.png)<br>
-
+****************************************************************************************************************************************************************
 
 7.from PIL import Image<br>
 image=Image.open('dog2.jfif')<br>
