@@ -148,19 +148,21 @@ OUTPUT:<br>
 
 9> #Resize the original image.<br>
 
-import cv2.<br>
-img=cv2.imread('sunflower.jpg').<br>
-print('original image length width',img.shape).<br>
-cv2.imshow('original image',img).<br>
-cv2.waitKey(0).<br>
-#to show the resized image.<br>
-imgresize=cv2.resize(img,(150,100)).<br>
-cv2.imshow('Resized image length width',imgresize.shape).<br>
-cv2.wailtKey(0).<br>
+import cv2<br>
+img=cv2.imread('sunflower.jpg')<br>
+print('original image length width',img.shape)<br>
+cv2.imshow('original image',img)<br>
+cv2.waitKey(0)<br>
+#to show the resized image<br>
+imgresize=cv2.resize(img,(150,100))<br>
+cv2.imshow('Resized image',imgresize)<br>
+print('Resized image length width',imgresize.shape)<br>
+cv2.waitKey(0)<br>
 
 OUTPUT:.<br>
 
 original image length width (183, 275, 3)<br>
 ![image](https://user-images.githubusercontent.com/97940333/174042826-33f1a80e-3a18-400b-bf78-20c68f4e8e7d.png) <br>
+![image](https://user-images.githubusercontent.com/97940333/174044426-d7c5f133-e0a4-499f-a526-3b6be3b11e3c.png) <br>
 
 
