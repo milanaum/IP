@@ -119,11 +119,12 @@ OUTPUT:<br>
 8. #Convert th eoriginal image to grayscale and then t binary.<br>
 import cv2<br>
 #read the image file<br>
-image=cv2.imread('sunflower.jpg')<br>
+image=cv2.imread('butterfly2.jpg')<br>
+cv2.imshow("RGB",image)<br>
 cv2.waitKey(0)<br>
 #GrayScale<br>
-img=cv2.imread('sunflower.jpg',0)<br>
-cv2.imshow("Gray",image)<br>
+img=cv2.imread('butterfly2.jpg',0)<br>
+cv2.imshow("Gray",img)<br>
 cv2.waitKey(0)<br>
 #Binary image<br>
 ret,bw_img=cv2.threshold(img,127,255,cv2.THRESH_BINARY)<br>
@@ -131,10 +132,18 @@ cv2.imshow("Binary",bw_img)<br>
 cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
 
-OUTPUT:<br>
-![image](https://user-images.githubusercontent.com/97940333/174036810-1fb360b2-8809-4e2a-9b6f-2534fb78142f.png)<br>
 
-![image](https://user-images.githubusercontent.com/97940333/174037016-4b2059f0-9bb4-464a-9641-6e50091b934b.png)<br>
+OUTPUT:<br>
+
+![image](https://user-images.githubusercontent.com/97940333/174040564-dd0da5ca-58a6-48c8-8389-1207328dd793.png)<br>
+
+![image](https://user-images.githubusercontent.com/97940333/174040698-41c45fab-0eb6-4986-a08e-cf4bd6dc2735.png)<br>
+
+![image](https://user-images.githubusercontent.com/97940333/174040831-35a398fe-0380-4b16-8def-0cbe8f703e47.png) <br>
+
+
+
+
 
 ************************************************************************************************************************************************
 
