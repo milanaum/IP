@@ -167,20 +167,38 @@ Resized image length width (100, 150, 3)<br>
 ![image](https://user-images.githubusercontent.com/97940333/174042826-33f1a80e-3a18-400b-bf78-20c68f4e8e7d.png) <br>
 ![image](https://user-images.githubusercontent.com/97940333/174044426-d7c5f133-e0a4-499f-a526-3b6be3b11e3c.png) <br>
 *************************************************************************************************************************
-import cv2 
-img=cv2.imread("")
-gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-hsv=cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
-lab=cv2.cvtColor(img,cv2.COLOR_BGR2LAB)
-hls=cv2.cvtColor(img,cv2.COLOR_BGR2HLS)
-yuv=cv2.cvtColor(img,cv2.COLOR_BGR2YUV)
-cv2.imshow("GRAY image",gray)
-cv2.imshow("HSV image",hsv)
-cv2.imshow("LAB image",lab)
-cv2.imshow("HLS image",hls)
-cv2.imshow("YUV image",yuv)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+import cv2 <br>
+img=cv2.imread("")<br>
+gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)<br>
+hsv=cv2.cvtColor(img,cv2.COLOR_BGR2HSV)<br>
+lab=cv2.cvtColor(img,cv2.COLOR_BGR2LAB)<br>
+hls=cv2.cvtColor(img,cv2.COLOR_BGR2HLS)<br>
+yuv=cv2.cvtColor(img,cv2.COLOR_BGR2YUV)<br>
+cv2.imshow("GRAY image",gray)<br>
+cv2.imshow("HSV image",hsv)<br>
+cv2.imshow("LAB image",lab)<br>
+cv2.imshow("HLS image",hls)<br>
+cv2.imshow("YUV image",yuv)<br>
+cv2.waitKey(0)<br>
+cv2.destroyAllWindows()<br>
 ***************************************************************************************************************************
+import cv2 as c<br>
+import numpy as np<br>
+from PIL import Image<br>
+array=np.zeros([100,200,3],dtype=np.uint8)<br>
+array[:,:100]=[255,130,0]<br>
+array[:,100:]=[0,0,255]<br>
+img=Image.fromarray(array)<br>
+img.save('image1.png')<br>
+img.show()<br>
+c.waitKey(0)<br>
+**************************************************************************************************************************
+# importing modules<br>
+import urllib.request<br>
+from PIL import Image<br>
 
+urllib.request.urlretrieve(<br>
+'https://images.app.goo.gl/pd2QMeH2a2LsvjmZA.jpg')<br>
 
+img = Image.open("gfg.png")<br>
+img.show()<br>
