@@ -181,6 +181,14 @@ cv2.imshow("HLS image",hls)<br>
 cv2.imshow("YUV image",yuv)<br>
 cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97940333/176153144-297fcec6-bda1-4a30-a331-61ea0c99a5b2.png)
+![image](https://user-images.githubusercontent.com/97940333/176153265-42fb969d-d35e-4f1d-a972-6bb969fbdbf4.png)
+![image](https://user-images.githubusercontent.com/97940333/176153353-bcb0d5a1-2e08-4d85-829c-e7c29f5ef743.png)
+![image](https://user-images.githubusercontent.com/97940333/176153462-952a3f48-78c3-416c-aeef-0085ece0d2ed.png)
+![image](https://user-images.githubusercontent.com/97940333/176153506-82a0db82-d8eb-4070-85c7-2d14a8423896.png)
+
 ***************************************************************************************************************************
 import cv2 as c<br>
 import numpy as np<br>
