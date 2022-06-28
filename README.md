@@ -167,8 +167,8 @@ Resized image length width (100, 150, 3)<br>
 ![image](https://user-images.githubusercontent.com/97940333/174042826-33f1a80e-3a18-400b-bf78-20c68f4e8e7d.png) <br>
 ![image](https://user-images.githubusercontent.com/97940333/174044426-d7c5f133-e0a4-499f-a526-3b6be3b11e3c.png) <br>
 *************************************************************************************************************************
-import cv2 <br>
-img=cv2.imread("")<br>
+10.import cv2 <br>
+img=cv2.imread(""dog3.jpg"")<br>
 gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)<br>
 hsv=cv2.cvtColor(img,cv2.COLOR_BGR2HSV)<br>
 lab=cv2.cvtColor(img,cv2.COLOR_BGR2LAB)<br>
