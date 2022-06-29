@@ -266,6 +266,52 @@ plt.show()<br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940333/176405174-e07a3bed-cd37-4f0e-a6a3-d70b4ab065cb.png)<br>
 
+hsv_img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)<br>
+light_orange=(1,190,200)<br>
+dark_orange=(18,255,255)<br>
+mask=cv2.inRange(hsv_img,light_orange,dark_orange)<br>
+result=cv2.bitwise_and(img,img,mask=mask)<br>
+plt.subplot(1,2,1)<br>
+plt.imshow(mask,cmap="gray")<br>
+plt.subplot(1,2,2)<br>
+plt.imshow(result)<br>
+plt.show()<br>
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97940333/176405684-28ec3e94-d295-4ae4-95e2-64e3161f1ee6.png)<br>
+
+light_white=(0,0,200)<br>
+dark_white=(145,60,255)<br>
+mask_white=cv2.inRange(hsv_img,light_white,dark_white)<br>
+result_white=cv2.bitwise_and(img,img,mask=mask_white)<br>
+plt.subplot(1,2,1)<br>
+plt.imshow(mask_white,cmap="gray")<br>
+plt.subplot(1,2,2)<br>
+plt.imshow(result_white)<br>
+plt.show()<br>
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97940333/176405847-8f674015-e838-4206-b8d6-a69830251c32.png)<br>
+
+final_mask=mask+mask_white<br>
+final_result=cv2.bitwise_and(img,img,mask=final_mask)<br>
+plt.subplot(1,2,1)<br>
+plt.imshow(final_mask,cmap="gray")<br>
+plt.subplot(1,2,2)<br>
+plt.imshow(final_mask)<br>
+plt.show()<br>
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97940333/176406093-4d78b5f6-690d-4ac6-809b-5b087bd56bbc.png)<br>
+
+blur=cv2.GaussianBlur(final_result,(7,7),0)<br>
+plt.imshow(blur)<br>
+plt.show()<br>
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97940333/176406261-ffd731ca-397f-4b50-ab5e-840a24c42b8d.png)<br>
+
+
 
 
 
