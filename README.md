@@ -202,4 +202,44 @@ plt.show()<br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940333/176397641-1f0adb06-c9d5-4264-87f4-e79975add2e3.png)
 
+****************************************************************************************************************************************************
+12. Write a program to perform arithmetic operations on image.<br>
+import cv2<br>
+import matplotlib.image as mping<br>
+import matplotlib.pyplot as plt<br>
+
+img1=cv2.imread('fish7.webp')<br>
+img2=cv2.imread('fish8.jpg')<br>
+
+fimg1 = img1 + img2<br>
+plt.imshow(fimg1)<br>
+plt.show()<br>
+
+cv2.imwrite('output.jpg',fimg1)<br>
+fimg2 = img1 -img2<br>
+plt.imshow(fimg2)<br>
+plt.show()<br>
+
+cv2.imwrite('output.jpg',fimg2)<br>
+fimg3 = img1 * img2<br>
+plt.imshow(fimg3)<br>
+plt.show()<br>
+
+cv2.imwrite('output.jpg',fimg3)<br>
+fimg4 = img1 / img2<br>
+plt.imshow(fimg4)<br>
+plt.show()<br>
+cv2.imwrite('output.jpg',fimg4)<br>
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97940333/176401744-bf0bc1b8-7efe-4af8-ad97-0f15e5b6dfe1.png)<br>
+![image](https://user-images.githubusercontent.com/97940333/176401830-024e6051-9dd2-4cda-82a4-a0f114a82485.png)<br>
+![image](https://user-images.githubusercontent.com/97940333/176401924-a1ca06e4-f0ed-4f72-9e16-00bf735f4523.png)<br>
+![image](https://user-images.githubusercontent.com/97940333/176401995-a7e61906-6c84-4421-9f33-88caa6b623c3.png)<br>
+************************************************************************************************************************************************************
+
+
+
+
+
 
