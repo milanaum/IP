@@ -254,6 +254,20 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940333/176402997-7ed91093-2075-4218-9803-ea6d975a95d9.png)<br>
 
 -1<br>
+****************************************************************************************************************************************************************
+14.Develop a program to readimage using URL.<br>
+import cv2<br>
+import matplotlib.image as mping<br>
+import matplotlib.pyplot as plt<br>
+img=cv2.imread('dog1.jpg')<br>
+plt.imshow(img)<br>
+plt.show()<br>
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97940333/176405174-e07a3bed-cd37-4f0e-a6a3-d70b4ab065cb.png)<br>
+
+
+
 
 
 
