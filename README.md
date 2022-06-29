@@ -167,7 +167,7 @@ Resized image length width (100, 150, 3)<br>
 ![image](https://user-images.githubusercontent.com/97940333/174042826-33f1a80e-3a18-400b-bf78-20c68f4e8e7d.png) <br>
 ![image](https://user-images.githubusercontent.com/97940333/174044426-d7c5f133-e0a4-499f-a526-3b6be3b11e3c.png) <br>
 *************************************************************************************************************************
-10.
+10.Develop the program to change the image to different color space.<br>
 import cv2 <br>
 img=cv2.imread(""dog3.jpg"")<br>
 gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)<br>
@@ -191,23 +191,15 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940333/176153506-82a0db82-d8eb-4070-85c7-2d14a8423896.png) <br>
 
 ***************************************************************************************************************************
-import cv2 as c<br>
-import numpy as np<br>
-from PIL import Image<br>
-array=np.zeros([100,200,3],dtype=np.uint8)<br>
-array[:,:100]=[255,130,0]<br>
-array[:,100:]=[0,0,255]<br>
-img=Image.fromarray(array)<br>
-img.save('image1.png')<br>
-img.show()<br>
-c.waitKey(0)<br>
-**************************************************************************************************************************
-# importing modules<br>
-import urllib.request<br>
-from PIL import Image<br>
+11. Develop a program to readimage using URL .<br>
+ from skimage import io<br>
+import matplotlib.pyplot as plt<br>
+url='https://images.unsplash.com/photo-1535591273668-578e31182c4f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM2NTI5fQ'<br>
+image=io.imread(url)<br>
+plt.imshow(image)<br>
+plt.show()<br>
 
-urllib.request.urlretrieve(<br>
-'https://images.app.goo.gl/pd2QMeH2a2LsvjmZA.jpg')<br>
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97940333/176397641-1f0adb06-c9d5-4264-87f4-e79975add2e3.png)
 
-img = Image.open("gfg.png")<br>
-img.show()<br>
+
