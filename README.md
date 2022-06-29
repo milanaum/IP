@@ -366,6 +366,37 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940333/176420980-df09f91c-2eb9-4a5d-a661-3d4c3a83f3b5.png)<br>
 ![image](https://user-images.githubusercontent.com/97940333/176421074-fa04d3f5-a819-4d24-b0da-2ff562241a92.png)<br>
 
+********************************************************************************************************************************
+17.Enhancement<br>
+from PIL import Image<br>
+from PIL import ImageEnhance<br>
+image=Image.open('min1.jpg')<br>
+image.show()<br>
+enh_bri=ImageEnhance.Brightness(image)<br>
+brightness=1.5<br>
+image_brightened=enh_bri.enhance(brightness)<br>
+image_brightened.show()<br>
+enh_col=ImageEnhance.Color(image)<br>
+color=1.5<br>
+image_colored=enh_col.enhance(color)<br>
+image_colored.show()<br>
+enh_con=ImageEnhance.Contrast(image)<br>
+contrast=1.5<br>
+image_contrasted=enh_con.enhance(contrast)<br>
+image_contrasted.show()<br>
+enh_sha=ImageEnhance.Sharpness(image)<br>
+sharpness=3.0<br>
+image_sharped=enh_sha.enhance(sharpness)<br>
+image_sharped.show()<br>
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97940333/176424439-ae90310f-5d41-4dcd-9a8e-5f1ef4e2cfd9.png)<br>
+![image](https://user-images.githubusercontent.com/97940333/176424614-71f52448-33dc-4d33-9473-b2b57f05ed96.png)<br>
+![image](https://user-images.githubusercontent.com/97940333/176424705-b3c117d5-6faf-4ddf-b631-7192859ac230.png)<br>
+![image](https://user-images.githubusercontent.com/97940333/176424796-10d08167-5654-4faf-be4d-7122c666459b.png)<br>
+
+
+
 
 
 
