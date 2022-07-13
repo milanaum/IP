@@ -437,8 +437,8 @@ cv2.destroyAllWindows()<br>
 if isSaved:<br>
     print('the image is successfully saved.')<br>
     
-    OUTPUT:<br>
-    the image is successfully saved.<br>
+  OUTPUT:<br>
+ the image is successfully saved.<br>
 ![image](https://user-images.githubusercontent.com/97940333/178697391-7b1c3cd7-5012-44ab-ab31-cd903b224d83.png)<br>
 ![image](https://user-images.githubusercontent.com/97940333/178697488-34317088-7664-45bf-84ad-9b74f3aebb38.png)<br>
 ****************************************************************************************************************************************************
