@@ -461,6 +461,7 @@ plt.imshow(equ,'gray')<br>
 plt.show()<br>
 
 OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97940333/178702433-f44c84e7-2f38-430f-90c1-30c52f3a1cf2.png) <br>
 
 
 
