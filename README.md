@@ -442,7 +442,7 @@ if isSaved:<br>
 ![image](https://user-images.githubusercontent.com/97940333/178697391-7b1c3cd7-5012-44ab-ab31-cd903b224d83.png)<br>
 ![image](https://user-images.githubusercontent.com/97940333/178697488-34317088-7664-45bf-84ad-9b74f3aebb38.png)<br>
 ****************************************************************************************************************************************************
-20.
+20.Graylevel slicing with background.<br>
 import cv2<br>
 import numpy as np<br>
 from matplotlib import pyplot as plt<br>
@@ -462,8 +462,27 @@ plt.show()<br>
 
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940333/178702917-2689d1ac-df4d-4508-b69e-c2b35d70e95b.png) <br>
+****************************************************************************************************************************************************************
+21.Graylevel slicing w/o background. <br>
+import cv2<br>
+import numpy as np<br>
+from matplotlib import pyplot as plt<br>
+image=cv2.imread('moon1.jpg',0)<br>
+x,y=image.shape<br>
+z=np.zeros((x,y))<br>
+for i in range(0,x):<br>
+    for j in range(0,y):<br>
+        if(image[i][j]>50 and image[i][j]<50):<br>
+            z[i][j]=255<br>
+        else:<br>
+                z[i][j]=image[i][j]<br>
+equ=np.hstack((image,z))<br>
+plt.title('Graylevel slicing w/o background')<br>
+plt.imshow(equ,'gray')<br>
+plt.show()<br>
 
-
-
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97940333/178703759-95fd8137-59c8-4b22-80f9-644288a8afce.png) <br>
+********************************************************************************************************************************************************************
 
 
