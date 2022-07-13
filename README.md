@@ -475,14 +475,15 @@ for i in range(0,x):<br>
         if(image[i][j]>50 and image[i][j]<50):<br>
             z[i][j]=255<br>
         else:<br>
-                z[i][j]=image[i][j]<br>
+                z[i][j]=0<br>
 equ=np.hstack((image,z))<br>
 plt.title('Graylevel slicing w/o background')<br>
 plt.imshow(equ,'gray')<br>
 plt.show()<br>
 
 OUTPUT:<br>
-![image](https://user-images.githubusercontent.com/97940333/178703759-95fd8137-59c8-4b22-80f9-644288a8afce.png) <br>
+![image](https://user-images.githubusercontent.com/97940333/178706029-f2a6cfaf-bfe4-4211-8194-bd4bae5ced4a.png)
+<br>
 ********************************************************************************************************************************************************************
 
 
