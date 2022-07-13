@@ -396,8 +396,35 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940333/176424796-10d08167-5654-4faf-be4d-7122c666459b.png)<br>
 ![image](https://user-images.githubusercontent.com/97940333/176425102-b61f553a-10ee-401c-9af9-6fa48056f091.png)
 
+****************************************************************************************************************************
+18.Morphological.<br>
+import cv2<br>
+import numpy as np<br>
+from matplotlib import pyplot as plt<br>
+from PIL import Image,ImageEnhance<br>
+img=cv2.imread('img6.jpg',0)<br>
+ax=plt.subplots(figsize=(20,10))<br>
+kernel=np.ones((5,5),np.uint8)<br>
+opening= cv2.morphologyEx(img, cv2.MORPH_OPEN,kernel)<br>
+closing=cv2.morphologyEx(img,cv2.MORPH_CLOSE,kernel)<br>
+erosion=cv2.erode(img,kernel,iterations=1)<br>
+dilation=cv2.dilate(img,kernel,iterations=1)<br>
+gradient=cv2.morphologyEx(img,cv2.MORPH_GRADIENT,kernel)<br>
+plt.subplot(151)<br>
+plt.imshow(opening)<br>
+plt.subplot(152)<br>
+plt.imshow(closing)<br>
+plt.subplot(153)<br>
+plt.imshow(erosion)<br>
+plt.subplot(154)<br>
+plt.imshow(dilation)<br>
+plt.subplot(155)<br>
+plt.imshow(gradient)<br>
+cv2.waitKey(0)<br>
 
-
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97940333/178693582-d612443d-9b81-4d75-b386-c15cf415e573.png)<br>
+***************************************************************************************************************************************
 
 
 
