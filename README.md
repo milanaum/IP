@@ -494,5 +494,27 @@ plt.show()<br>
 
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940333/178958570-eb98db4e-ab51-443d-b6dc-30d36dcec35e.png) <br>
+
+# importing required libraries of opencv <br>
+import cv2 <br>
+ 
+# importing library for plotting <br>
+from matplotlib import pyplot as plt <br>
+ 
+# reads an input image <br>
+img = cv2.imread('nature.jpg',0) <br>
+ 
+# find frequency of pixels in range 0-255 <br>
+histr = cv2.calcHist([img],[0],None,[256],[0,256]) <br>
+ 
+# show the plotting graph of an image <br>
+plt.plot(histr) <br>
+plt.show() <br>
+
+OUTPUT: <br>
+![image](https://user-images.githubusercontent.com/97940333/178959045-93bd020f-f7bd-4b11-82b9-e36af8399302.png)<br>
+************************************************************************************************************************************************************
+23.Analyse the image data using histogram with numpy.<br>
+
 ************************************************************************************************************************************************************
 
