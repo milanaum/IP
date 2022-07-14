@@ -515,6 +515,27 @@ OUTPUT: <br>
 ![image](https://user-images.githubusercontent.com/97940333/178959045-93bd020f-f7bd-4b11-82b9-e36af8399302.png)<br>
 ************************************************************************************************************************************************************
 23.Analyse the image data using histogram with numpy.<br>
+import cv2<br>
+import numpy as np<br>
+img=cv2.imread('img12.jpg')<br>
+hist=cv2.calcHist([img],[0],None,[256],[0,256])<br>
+plt.hist(img.ravel(),256,[0,256])<br>
+plt.show()<br>
 
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97940333/178959565-c17bb136-3055-4cf6-ae47-ee6cba31592b.png)<br>
+
+import numpy as np<br>
+import cv2 as cv<br>
+from matplotlib import pyplot as plt<br>
+img = cv.imread('img12.jpg')<br>
+plt.imshow(img)<br>
+plt.show()<br>
+img = cv.imread('img12.jpg',0)<br>
+plt.hist(img.ravel(),256,[0,256]);<br>
+plt.show()<br>
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97940333/178959977-13d440d8-9a3b-4cbe-a41a-e3dc302b99f2.png)<br>
 ************************************************************************************************************************************************************
 
