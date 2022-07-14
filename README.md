@@ -537,5 +537,40 @@ plt.show()<br>
 
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940333/178959977-13d440d8-9a3b-4cbe-a41a-e3dc302b99f2.png)<br>
+![image](https://user-images.githubusercontent.com/97940333/178960117-06236957-5e5e-4729-8520-725b09db23c1.png)<br>
+
 ************************************************************************************************************************************************************
+23.Analyse the image data using histogram with skimage.<br>
+from skimage import io<br>
+import matplotlib.pyplot as plt<br>
+img = cv.imread('img5.jpg')<br>
+plt.imshow(img)<br>
+plt.show()<br>
+ax = plt.hist(img.ravel(), bins = 256)<br>
+_ = plt.xlabel('Intensity Value')<br>
+_ = plt.ylabel('Count')<br>
+plt.show()<br>
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97940333/178960622-2867a03a-64c0-4d76-9f6e-f61feadac3c5.png)<br>
+![image](https://user-images.githubusercontent.com/97940333/178960930-7ec5b17b-5473-4782-b5c0-82628615fac7.png)<br>
+
+from skimage import io<br>
+import matplotlib.pyplot as plt<br>
+img = io.imread('lion2.jpg')<br>
+plt.imshow(img)<br>
+plt.show()<br>
+image = io.imread('lion2.jpg')<br>
+ax = plt.hist(image.ravel(), bins = 256)<br>
+plt.show()<br>
+
+OUTPUT<br>
+![image](https://user-images.githubusercontent.com/97940333/178961190-2b3a6e4c-6339-403b-8f64-7c497505be7a.png)<br>
+![image](https://user-images.githubusercontent.com/97940333/178961285-8cb18da5-ff95-4573-b80e-74921f5c60e8.png)<br>
+
+
+
+****************************************************************************************************************************************************
+
+
 
