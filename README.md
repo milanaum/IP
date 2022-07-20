@@ -571,6 +571,26 @@ OUTPUT<br>
 
 
 ****************************************************************************************************************************************************
+22.Program to perform basic image data analysis using intensity transformation: <br>
+a) Image negative<br>
+b) Log transformation<br>
+c) Gamma correction<br>
+
+%matplotlib inline<br>
+import imageio<br>
+import matplotlib.pyplot as plt<br>
+import warnings<br>
+import matplotlib.cbook<br>
+warnings.filterwarnings("ignore",category=matplotlib.cbook.mplDeprecation)<br>
+pic=imageio.imread('img2.jpg')<br>
+plt.figure(figsize=(6,6))<br>
+plt.imshow(pic);<br>
+plt.axis('off');<br>
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97940333/179941838-0fa142ee-2538-496f-beee-dc3788680884.png) <br>
+
+*********************************************************************************************************************************************
 
 
 
