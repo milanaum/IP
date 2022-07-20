@@ -627,7 +627,7 @@ c) Gamma correction <br>
 import imageio <br>
 import matplotlib.pyplot as plt<br>
 
-# Gamma encoding<br>
+#Gamma encoding<br>
 pic=imageio.imread('img2.jpg')<br>
 gamma=2.2# Gamma < 1 ~ Dark ; Gamma > 1 ~ Bright<br>
 
@@ -683,18 +683,18 @@ OUTPUT: <br>
 
 
 c) Cropping <br>
-# Importing Image class from PIL module<br>
+#Importing Image class from PIL module<br>
 from PIL import Image<br>
 import matplotlib.pyplot as plt<br>
-# Opens a image in RGB mode<br>
+#Opens a image in RGB mode<br>
 im = Image.open('sea1.jpg')<br>
 
-# Size of the image in pixels (size of original image)<br>
-# (This is not mandatory)<br>
+#Size of the image in pixels (size of original image)<br>
+#(This is not mandatory)<br>
 width, height = im.size<br>
 
-# Cropped image of above dimension<br>
-# (It will not change original image)<br>
+#Cropped image of above dimension<br>
+#(It will not change original image)<br>
 im1 = im.crop((280,100,800,600))<br>
 
 #Shows the image in image viewer<br>
