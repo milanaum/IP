@@ -697,7 +697,7 @@ width, height = im.size<br>
 # (It will not change original image)<br>
 im1 = im.crop((280,100,800,600))<br>
 
-# Shows the image in image viewer<br>
+#Shows the image in image viewer<br>
 im1.show()<br>
 plt.imshow(im1)<br>
 plt.show()<br>
