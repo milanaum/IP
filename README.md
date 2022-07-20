@@ -576,6 +576,7 @@ a) Image negative<br>
 b) Log transformation<br>
 c) Gamma correction<br>
 
+a) Image negative <br>
 %matplotlib inline<br>
 import imageio<br>
 import matplotlib.pyplot as plt<br>
@@ -598,6 +599,8 @@ plt.axis('off');<br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940333/179942981-24804beb-fa70-4062-97d2-217e106bd1e8.png)<br>
 
+
+b) LOg transformation <br>
 %matplotlib inline <br>
 
 import imageio <br>
@@ -619,6 +622,8 @@ plt.axis('off'); <br>
 OUTPUT:  <br>
 ![image](https://user-images.githubusercontent.com/97940333/179946062-03dbd291-aa8e-41f0-8652-c17a10457bf4.png) <br>
 
+
+c) Gamma correction <br>
 import imageio <br>
 import matplotlib.pyplot as plt<br>
 
@@ -640,6 +645,7 @@ OUTPUT:<br>
  b) Flipping <br>
  c) Cropping <br>
 
+a) Sharpness <br>
 #Image sharpen<br>
 from PIL import Image<br>
 from PIL import ImageFilter<br>
@@ -657,6 +663,7 @@ plt.show()<br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940333/179952626-e8ed9ca4-a737-4da1-8e8c-10a37cb732b5.png) <br>
 
+b) Flipping<br>
 #Image flip <br>
 import matplotlib.pyplot as plt <br>
 #Load the image   <br>
@@ -675,6 +682,29 @@ OUTPUT: <br>
 ![image](https://user-images.githubusercontent.com/97940333/179954513-be9898bb-fb97-4df0-9a83-1a7638475eab.png) <br>
 
 
+c) Cropping <br>
+# Importing Image class from PIL module<br>
+from PIL import Image<br>
+import matplotlib.pyplot as plt<br>
+# Opens a image in RGB mode<br>
+im = Image.open('sea1.jpg')<br>
+
+# Size of the image in pixels (size of original image)<br>
+# (This is not mandatory)<br>
+width, height = im.size<br>
+
+# Cropped image of above dimension<br>
+# (It will not change original image)<br>
+im1 = im.crop((280,100,800,600))<br>
+
+# Shows the image in image viewer<br>
+im1.show()<br>
+plt.imshow(im1)<br>
+plt.show()<br>
+
+OUTPUT::<br>
+![image](https://user-images.githubusercontent.com/97940333/179958054-610a7ce2-1c47-4502-845b-7ccab11cea54.png) <br>
+************************************************************************************************************************************************************
 
 
 
