@@ -657,6 +657,24 @@ plt.show()<br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940333/179952626-e8ed9ca4-a737-4da1-8e8c-10a37cb732b5.png) <br>
 
+#Image flip <br>
+import matplotlib.pyplot as plt <br>
+#Load the image   <br>
+img = Image.open('sea1.jpg') <br>
+plt.imshow(img) <br>
+plt.show() <br>
+#use the flip function <br>
+flip = img.transpose(Image.FLIP_LEFT_RIGHT) <br>
+
+#save the image <br>
+flip.save('D:/image_flip.jpg') <br>
+plt.imshow(flip) <br>
+plt.show() <br>
+
+OUTPUT: <br>
+![image](https://user-images.githubusercontent.com/97940333/179954513-be9898bb-fb97-4df0-9a83-1a7638475eab.png) <br>
+
+
 
 
 
