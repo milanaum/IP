@@ -598,7 +598,66 @@ plt.axis('off');<br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940333/179942981-24804beb-fa70-4062-97d2-217e106bd1e8.png)<br>
 
+%matplotlib inline <br>
+
+import imageio <br>
+import numpy as np <br>
+import matplotlib.pyplot as plt <br>
+
+pic=imageio.imread('img2.jpg') <br>
+gray=lambda rgb : np.dot(rgb[...,:3],[0.299,0.587,0.114]) <br>
+gray=gray(pic) <br>
+
+max_=np.max(gray) <br>
+
+def log_transform(): <br>
+    return(255/np.log(1+max_))*np.log(1+gray) <br>
+plt.figure(figsize=(5,5)) <br>
+plt.imshow(log_transform(),cmap=plt.get_cmap(name='gray')) <br>
+plt.axis('off'); <br>
+
+OUTPUT:  <br>
+![image](https://user-images.githubusercontent.com/97940333/179946062-03dbd291-aa8e-41f0-8652-c17a10457bf4.png) <br>
+
+import imageio <br>
+import matplotlib.pyplot as plt<br>
+
+# Gamma encoding<br>
+pic=imageio.imread('img2.jpg')<br>
+gamma=2.2# Gamma < 1 ~ Dark ; Gamma > 1 ~ Bright<br>
+
+gamma_correction=((pic/255)**(1/gamma))<br>
+plt.figure(figsize=(5,5))<br>
+plt.imshow(gamma_correction)<br>
+plt.axis('off');<br>
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97940333/179950018-155ea455-1d91-4c86-850e-aca30e76e365.png) <br>
+
 **********************************************************************************************************************************
+24. Program to perform basic image manipulation: <br>
+ a) Sharpness <br>
+ b) Flipping <br>
+ c) Cropping <br>
+
+#Image sharpen<br>
+from PIL import Image<br>
+from PIL import ImageFilter<br>
+import matplotlib.pyplot as plt<br>
+# Load the image<br>
+my_image = Image.open('sea1.jpg')<br>
+#Usw sharpen function<br>
+sharp = my_image.filter(ImageFilter.SHARPEN)<br>
+#Save the image<br>
+sharp.save('D:/image_sharpen.jpg')<br>
+sharp.show()<br>
+plt.imshow(sharp)<br>
+plt.show()<br>
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97940333/179952626-e8ed9ca4-a737-4da1-8e8c-10a37cb732b5.png) <br>
+
+
 
 
 
