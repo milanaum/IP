@@ -590,7 +590,15 @@ plt.axis('off');<br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940333/179941838-0fa142ee-2538-496f-beee-dc3788680884.png) <br>
 
-*********************************************************************************************************************************************
+negative =255- pic # neg = (L-1) - img <br>
+plt.figure(figsize=(6,6))<br>
+plt.imshow(negative);<br>
+plt.axis('off');<br>
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97940333/179942981-24804beb-fa70-4062-97d2-217e106bd1e8.png)<br>
+
+**********************************************************************************************************************************
 
 
 
