@@ -532,7 +532,7 @@ img = cv.imread('img12.jpg')<br>
 plt.imshow(img)<br>
 plt.show()<br>
 img = cv.imread('img12.jpg',0)<br>
-plt.hist(img.ravel(),256,[0,256]);<br>
+plt.hist(img.ravel(),256,[0,256]);<br> 
 plt.show()<br>
 
 OUTPUT:<br>
