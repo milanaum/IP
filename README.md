@@ -735,6 +735,28 @@ plt.show()<br>
 OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940333/180187519-773d378a-0169-4f36-8c5e-232c1623b3e6.png)<br>
 
+************************************************************************************************************************************
+from PIL import Image <br>
+import numpy as np<br>
+import matplotlib.pyplot as plt<br>  
+imgsize=(650,650)<br>
+image = Image.new('RGBA', imgsize)<br>
+innerColor = [153,0,0]<br>
+for y in range(imgsize[1]):<br>
+for x in range(imgsize[0]):<br>
+ distanceToCenter =np.sqrt((x - imgsize[0]/2) ** 2 + (y - imgsize[1]/2) ** 2)<br>
+ distanceToCenter = (distanceToCenter) / (np.sqrt(2) * imgsize[0]/2)<br>
+ r = distanceToCenter + innerColor[0] * (1 - distanceToCenter)<br>
+ g =  distanceToCenter + innerColor[1] * (1 - distanceToCenter)<br>
+ b =  distanceToCenter + innerColor[2] * (1 - distanceToCenter)<br>
+ image.putpixel((x, y), (int(r), int(g), int(b)))<br>
 
+plt.imshow(image)<br>
+plt.show() <br> 
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97940333/180195395-15d02dd3-77cc-45c2-831a-a1bf7485b6f9.png) <br>
+
+**************************************************************************************************************************************
 
 
