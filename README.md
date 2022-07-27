@@ -857,7 +857,43 @@ OUTPUT: <br>
 
 ![image](https://user-images.githubusercontent.com/97940333/181225511-0b025b40-07df-409b-9ffb-420cdb524491.png) <br>
 ************************************************************************************************************
+# Python3 program for printing <br>
+# the rectangular pattern <br>
+ 
+# Function to print the pattern <br>
+def printPattern(n): <br>
+ 
+    arraySize = n * 2 - 1; <br>
+    result = [[0 for x in range(arraySize)] <br>
+                 for y in range(arraySize)]; <br>
+         
+    # Fill the values <br>
+    for i in range(arraySize): <br> <br>
+        for j in range(arraySize): <br>
+            if(abs(i - (arraySize // 2)) > <br>
+               abs(j - (arraySize // 2))): <br>
+                result[i][j] = abs(i - (arraySize // 2)) ; <br>
+            else: <br>
+                result[i][j] = abs(j - (arraySize // 2)) ; <br>
+             
+    # Print the array <br>
+    for i in range(arraySize): <br>
+        for j in range(arraySize): <br>
+            print(result[i][j], end = " "); <br>
+        print(""); <br>
+ 
+# Driver Code <br>
+n = 3; <br>
+ 
+printPattern(n); <br>
 
+OUTPUT: <br>
+
+2 2 2 2 2  <br>
+2 1 1 1 2  <br>
+2 1 0 1 2  <br>
+2 1 1 1 2  <br>
+2 2 2 2 2  <br>
 
 
 
