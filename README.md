@@ -758,5 +758,44 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940333/180195395-15d02dd3-77cc-45c2-831a-a1bf7485b6f9.png) <br>
 
 **************************************************************************************************************************************
+Matrix<br>
 
+import numpy as np<br>
+x = np.ones((3, 3))<br>
+x[1:-1,1:-1] = 0<br>
+x = np.pad(x,pad_width=1,mode='constant',constant_values=2)<br>
+print(x)<br>
+
+OUTPUT:<br>
+
+[[2. 2. 2. 2. 2.]
+ [2. 1. 1. 1. 2.]
+ [2. 1. 0. 1. 2.]
+ [2. 1. 1. 1. 2.]
+ [2. 2. 2. 2. 2.]] <br>
+ 
+ *************************************************************************************************************************************************
+ 
+ from PIL import Image <br>
+import numpy as np<br>
+import matplotlib.pyplot as plt<br>
+w, h = 512, 512<br>
+data = np.zeros((h, w, 3), dtype=np.uint8)<br>
+data[0:120, 0:512] = [255, 255, 255]<br>
+data[120:256, 0:512] = [218, 218, 218]<br>
+data[256:320, 0:512] = [0, 0,0]<br>
+data[320:420, 0:512] = [218, 218,218]<br>
+data[420:512, 0:512] = [255, 255,255]<br>
+# red patch in upper left<br>
+img = Image.fromarray(data, 'RGB')<br>
+img.save('img8.jpg')<br>
+img.show()<br>
+plt.imshow(img)<br>
+
+OUTPUT: <br>
+
+![image](https://user-images.githubusercontent.com/97940333/181220842-4273d644-f372-4cbd-acac-1f22abed6755.png)<br>
+
+
+ 
 
