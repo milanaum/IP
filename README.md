@@ -796,6 +796,69 @@ OUTPUT: <br>
 
 ![image](https://user-images.githubusercontent.com/97940333/181220842-4273d644-f372-4cbd-acac-1f22abed6755.png)<br>
 
-
+****************************************************************************************************************************************************
+ MAXIMUM <br>
  
+ import cv2<br>
+import numpy as np<br>
+import matplotlib.pyplot as plt<br>
+img=cv2.imread('img4.jpg' )<br>
+plt.imshow(img)<br>
+plt.show()<br>
+max_channels = np.amax([np.amax(img[:,:,0]), np.amax(img[:,:,1]),np.amax(img[:,:,2])])<br>
+
+print(max_channels)<br>
+
+OUTPUT: <br>
+
+![image](https://user-images.githubusercontent.com/97940333/181224477-028c034b-4778-4cde-b5e6-79c4ae17181b.png) <br>
+
+************************************************************************************************************
+MINIMUM <br>
+
+import cv2<br>
+import numpy as np<br>
+import matplotlib.pyplot as plt<br>
+img=cv2.imread('img1.jpg' )<br>
+plt.imshow(img)<br>
+plt.show()<br>
+min_channels = np.amin([np.min(img[:,:,0]), np.amin(img[:,:,1]),np.amin(img[:,:,2])])<br>
+
+print(min_channels)<br>
+
+OUTPUT:<br>
+
+![image](https://user-images.githubusercontent.com/97940333/181224802-52f64f17-37c4-44ff-8c41-c42c75ab6740.png) <br>
+
+****************************************************************************************************************
+AVERAGE <br>
+
+import cv2 <br>
+import matplotlib.pyplot as plt <br>
+img=cv2.imread("bike1.jpg",0) <br>
+img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB) <br>
+plt.imshow(img) <br>
+np.average(img) <br>
+
+OUTPUT: <br>
+![image](https://user-images.githubusercontent.com/97940333/181225207-c2a5a4f8-2e7e-4673-a59e-809811c5e6e0.png) <br>
+*********************************************************************************************************************
+STANDARD DEVIATION <br>
+
+from PIL import Image,ImageStat <br>
+import matplotlib.pyplot as plt <br>
+im=Image.open('nature.jpg') <br>
+plt.imshow(im) <br>
+plt.show() <br>
+stat=ImageStat.Stat(im) <br>
+print(stat.stddev) <br>
+
+OUTPUT: <br>
+
+![image](https://user-images.githubusercontent.com/97940333/181225511-0b025b40-07df-409b-9ffb-420cdb524491.png) <br>
+************************************************************************************************************
+
+
+
+
 
