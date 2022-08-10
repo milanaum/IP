@@ -1,7 +1,7 @@
 # IP
 pip install opencv-python <br>
 ************************************************************************************************
-1.  Develop  a program to display grayscale image using raed and write operation. <br>
+1.  Develop  a program to display grayscale image using read and write operation. <br>
 import cv2<br>
 img=cv2.imread('rose2.jfif',0)<br>
 cv2.imshow('image',img)<br>
