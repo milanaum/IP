@@ -911,3 +911,21 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940333/181434227-faf4c971-f081-4c26-9543-3a29cb4a6b06.png) <br>
 
 ******************************************************************************************************************************************
+Skimage <br>
+
+from skimage import io<br>
+import matplotlib.pyplot as plt<br>
+image = io.imread('img12.jpg')<br>
+
+_ = plt.hist(image.ravel(), bins = 256, color = 'orange', )<br>
+_ = plt.hist(image[:, :, 0].ravel(), bins = 256, color = 'red', alpha = 0.5)<br>
+_ = plt.hist(image[:, :, 1].ravel(), bins = 256, color = 'Green', alpha = 0.5)<br>
+_ = plt.hist(image[:, :, 2].ravel(), bins = 256, color = 'Blue', alpha = 0.5)<br>
+_ = plt.xlabel('Intensity Value')<br>
+_ = plt.ylabel('Count')<br>
+_ = plt.legend(['Total', 'Red_Channel', 'Green_Channel', 'Blue_Channel'])<br>
+plt.show()<br>
+
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97940333/186390430-eb425737-8435-4a4e-9516-ebcd6cee4a46.png)<br>
+********************************************************************************************************************************************************
