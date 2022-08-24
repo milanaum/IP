@@ -339,7 +339,7 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/97940333/176410459-795df57b-6379-41fb-b4e3-91ed883496e9.png)<br>
 ************************************************************************************************************************************************
 16. Blurring image.<br>
-17. import cv2<br>
+ import cv2<br>
 import numpy as np<br>
 
 image=cv2.imread('img6.jpg')<br>
