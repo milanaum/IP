@@ -963,3 +963,32 @@ size of the image: (256, 256)  colour mode: RGB <br>
 ![image](https://user-images.githubusercontent.com/97940333/186626829-6b050427-10fb-49b1-9ce4-41dc8a08e6cf.png)<br>
 ![image](https://user-images.githubusercontent.com/97940333/186626922-ddcd5e3e-d457-458d-9f19-2a2b37acf14e.png)<br>
 
+********************************************************************************************************************
+27.
+#More Attributes
+image = merged
+
+print('image size: ' , image.size,
+      '\ncolor mode: ' , image.mode,
+      '\nimage width: ' , image.width, '| also represented by: ' , image.size[0],
+      '\nimage height: ' , image.height, '| also represented by: ' , image.size[1],)
+      
+ OUTPUT:
+ image size:  (256, 256) 
+color mode:  RGB 
+image width:  256 | also represented by:  256 
+image height:  256 | also represented by:  256
+      
+#mapping the pixels of the image so we can usse them as coordinates
+pixel = greyscale.load()
+
+#a nested Loop to parse through all the pixels in the image
+for row in range(greyscale.size[0]):
+    for column in range(greyscale.size[1]):
+        if pixel[row, column] !=(255):
+            pixel[row, column] = (0)
+            
+greyscale
+    
+OUTPUT:
+![image](https://user-images.githubusercontent.com/97940333/186630484-160c9ed5-2f82-4162-8b5d-f6028ac69d04.png)
