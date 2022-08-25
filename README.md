@@ -965,30 +965,31 @@ size of the image: (256, 256)  colour mode: RGB <br>
 
 ********************************************************************************************************************
 27.
-#More Attributes
-image = merged
+#More Attributes <br>
+image = merged<br>
 
-print('image size: ' , image.size,
-      '\ncolor mode: ' , image.mode,
-      '\nimage width: ' , image.width, '| also represented by: ' , image.size[0],
-      '\nimage height: ' , image.height, '| also represented by: ' , image.size[1],)
+print('image size: ' , image.size,<br>
+      '\ncolor mode: ' , image.mode,<br>
+      '\nimage width: ' , image.width, '| also represented by: ' , image.size[0],<br>
+      '\nimage height: ' , image.height, '| also represented by: ' , image.size[1],)<br>
       
- OUTPUT:
- image size:  (256, 256) 
-color mode:  RGB 
-image width:  256 | also represented by:  256 
-image height:  256 | also represented by:  256
+ OUTPUT:<br>
+ image size:  (256, 256) <br>
+color mode:  RGB <br>
+image width:  256 | also represented by:  256 <br>
+image height:  256 | also represented by:  256<br>
       
-#mapping the pixels of the image so we can usse them as coordinates
-pixel = greyscale.load()
+#mapping the pixels of the image so we can usse them as coordinates<br>
+pixel = greyscale.load()<br>
 
-#a nested Loop to parse through all the pixels in the image
-for row in range(greyscale.size[0]):
-    for column in range(greyscale.size[1]):
-        if pixel[row, column] !=(255):
-            pixel[row, column] = (0)
+#a nested Loop to parse through all the pixels in the image<br>
+for row in range(greyscale.size[0]):<br>
+    for column in range(greyscale.size[1]):<br>
+        if pixel[row, column] !=(255):<br>
+            pixel[row, column] = (0)<br>
             
-greyscale
+greyscale<br>
     
-OUTPUT:
-![image](https://user-images.githubusercontent.com/97940333/186630484-160c9ed5-2f82-4162-8b5d-f6028ac69d04.png)
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/97940333/186630484-160c9ed5-2f82-4162-8b5d-f6028ac69d04.png)<br>
+************************************************************************************************************************************************************
