@@ -958,6 +958,8 @@ greyscale = merged.convert('L')<br>
 greyscale<br>
 
 OUTPUT: <br>
-size of the image: (256, 256)  colour mode: RGB
-size of the image: (256, 256)  colour mode: RGB
+size of the image: (256, 256)  colour mode: RGB <br>
+size of the image: (256, 256)  colour mode: RGB <br>
+![image](https://user-images.githubusercontent.com/97940333/186626829-6b050427-10fb-49b1-9ce4-41dc8a08e6cf.png)<br>
+![image](https://user-images.githubusercontent.com/97940333/186626922-ddcd5e3e-d457-458d-9f19-2a2b37acf14e.png)<br>
 
