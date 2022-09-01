@@ -1153,6 +1153,7 @@ segmented_image = label2rgb(segments, face_image, kind='avg')<br>
 plot_comparison (face_image, segmented_image, 'Segmented image, 400 superpixels'<br>
 
 OUTPUT:
+![image](https://user-images.githubusercontent.com/97940333/187876505-f33291c3-ed37-4650-ab85-4ca6d93a05fc.png)
 
 
 ********************************************************************************************
