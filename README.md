@@ -1220,3 +1220,30 @@ print("Dice's dots number: {}.".format(len(dots_contours)))<br>
 
 OUTPUT:![image](https://user-images.githubusercontent.com/97940333/187872828-ab0d8f4f-5474-4e41-8280-24dfa16c603e.png)
 
+****************************************************************************************
+38.#Canny Edge detection
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt
+plt.style.use('seaborn')
+loaded_image = cv2.imread("imgsh.png")
+loaded_image = cv2.cvtColor(loaded_image,cv2.COLOR_BGR2RGB)
+gray_image = cv2.cvtColor(loaded_image,cv2.COLOR_BGR2GRAY)
+edged_image = cv2.Canny(gray_image, threshold1=30, threshold2=100)
+plt.figure(figsize=(20,20))
+plt.subplot(1,3,1)
+plt.imshow(loaded_image, cmap="gray")
+plt.title("original Image")
+plt.axis("off")
+plt.subplot(1,3,2)
+plt.imshow(gray_image,cmap="gray")
+plt.axis("off")
+plt.title("GrayScale Image")
+plt.subplot(1,3,3)
+plt.imshow(edged_image,cmap="gray")
+plt.axis("off")
+plt.title("Canny Edge Detected Image")
+plt.show()
+
+OUTPUT:
+![image](https://user-images.githubusercontent.com/97940333/187896693-6c7237e9-860e-4b5c-ac40-a9ff63f1e44e.png)
