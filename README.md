@@ -1247,3 +1247,93 @@ plt.show()
 
 OUTPUT:
 ![image](https://user-images.githubusercontent.com/97940333/187896693-6c7237e9-860e-4b5c-ac40-a9ff63f1e44e.png)
+
+****************************************************************************************************
+39. #Laplacian and Sobel Edge detecting methods
+import cv2 
+import numpy as np
+from matplotlib import pyplot as plt
+
+#Loading image
+#imge = cv2.imread('SanFrancisco.jpg',) 
+imge = cv2.imread('imgsh.png',)
+
+#converting to gray scale
+gray = cv2.cvtColor(imge, cv2.COLOR_BGR2GRAY)
+
+#remove noise
+img = cv2.GaussianBlur (gray, (3,3),0)
+
+#convolute with proper kernels
+laplacian = cv2.Laplacian (img,cv2.CV_64F)
+sobelx = cv2.Sobel(img,cv2.CV_64F,1,0,ksize=5) #x
+sobely = cv2.Sobel(img,cv2.CV_64F,0,1,ksize=5) # y
+
+plt.subplot(2,2,1), plt.imshow(img, cmap = 'gray')
+plt.title('Original'), plt.xticks([]), plt.yticks([])
+plt.subplot(2,2,2), plt.imshow(laplacian, cmap = 'gray')
+plt.title('Laplacian'), plt.xticks([]), plt.yticks([]) 
+plt.subplot(2,2,3), plt.imshow(sobelx, cmap = 'gray')
+plt.title('Sobel x'), plt.xticks([]), plt.yticks([])
+plt.subplot(2,2,4), plt.imshow(sobely,cmap = 'gray') 
+plt.title('Sobel Y'), plt.xticks([]), plt.yticks([])
+          
+plt.show()
+
+OUTPUT:
+
+![image](https://user-images.githubusercontent.com/97940333/187897537-82798031-7a1e-4083-8d0d-1234e6b7a477.png)
+
+************************************************************************************************************
+40.#Edge detection using Prewitt operator
+import cv2
+import numpy as np
+from matplotlib import pyplot as plt
+img = cv2.imread('imgsh.png')
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+img_gaussian = cv2.GaussianBlur (gray, (3,3),0)
+
+#prewitt
+kernelx = np.array([[1,1,1],[0,0,0],[-1,-1,-1]]) 
+kernely = np.array([[-1,0,1],[-1,0,1],[-1,0,1]])
+img_prewittx = cv2.filter2D (img_gaussian, -1, kernelx) 
+img_prewitty = cv2.filter2D(img_gaussian, -1, kernely)
+
+cv2.imshow("Original Image", img)
+cv2.imshow("Prewitt x", img_prewittx)
+cv2.imshow("Prewitt y", img_prewitty)
+cv2.imshow("Prewitt", img_prewittx + img_prewitty)
+cv2.waitKey()
+cv2.destroyAllWindows()
+
+OUTPUT:
+![image](https://user-images.githubusercontent.com/97940333/187898488-b13dd6d4-7d4e-41f6-b421-57ec6994b172.png)
+
+****************************************************************************************************************
+41.#Roberts Edge Detection- Roberts cross operator
+import cv2
+import numpy as np
+from scipy import ndimage
+from matplotlib import pyplot as plt 
+roberts_cross_v = np.array( [[1, 0],
+                          [0,-1]] )
+
+roberts_cross_h = np.array( [[0, 1],
+                          [-1, 0]] )
+
+img = cv2.imread("imgsh.png",0).astype('float64')
+img/=255.0
+vertical = ndimage.convolve( img, roberts_cross_v )
+horizontal = ndimage.convolve( img, roberts_cross_h)
+
+edged_img = np.sqrt( np.square(horizontal) + np.square(vertical))
+edged_img*=255
+cv2.imwrite("output.jpg",edged_img)
+cv2.imshow("outputImage",edged_img)
+cv2.waitKey()
+cv2.destroyAllWindows()
+
+OUTPUT:
+![image](https://user-images.githubusercontent.com/97940333/187901459-58c2f882-df05-4727-bc60-1bc22fb80dc7.png)
+
+
